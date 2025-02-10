@@ -12,7 +12,7 @@ public class OrderController {
 	private final OrderService orderService;
 
 	@GetMapping("/order/{orderId}")
-	public String getOrder(@PathVariable("orderId") String orderId) {
+	public String getOrder(@PathVariable("orderId") Long orderId) {
 		return orderService.getOrder(orderId);
 	}
 
