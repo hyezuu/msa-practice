@@ -18,6 +18,11 @@ public class ProductController {
 	@GetMapping("/product/{id}")
 	public String getProduct(@PathVariable("id") Long id) {
 		Product product = productService.getProductDetails(id);
-		return "Product " + product.getTitle() + " Info !!!! From port : " + serverPort;
+		return "Product " + product.getTitle() + " Info ! \n From port : " + serverPort;
+	}
+
+	@GetMapping("/product")
+	public String getProduct() {
+		return "ProductInfo ! \n From port : " + serverPort;
 	}
 }

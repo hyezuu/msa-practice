@@ -13,7 +13,7 @@ public class OrderService {
 		return productClient.getProduct(productId);
 	}
 
-	public String getOrder(Long orderId) {
+	public String getOrderProduct(Long orderId) {
 		if(orderId.equals(1L)) {
 			Long productId = 111L;
 			String productInfo = getProductInfo(productId);
