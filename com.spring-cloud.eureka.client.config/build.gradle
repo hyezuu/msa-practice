@@ -28,25 +28,12 @@ ext {
 }
 
 dependencies {
-	//spring boot actuator
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
-
-	//Config Client
-	implementation 'org.springframework.cloud:spring-cloud-starter-config'
-
-	//resilience4j
-	implementation 'io.github.resilience4j:resilience4j-spring-boot3:2.2.0'
-	implementation 'org.springframework.boot:spring-boot-starter-aop'
-
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.cloud:spring-cloud-config-server'
 	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
-	implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
-
-	runtimeOnly 'io.micrometer:micrometer-registry-prometheus'
-
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
-
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
