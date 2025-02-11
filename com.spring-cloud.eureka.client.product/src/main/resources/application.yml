@@ -52,3 +52,9 @@ management:
     metrics:
       export:
         enabled: true
+  zipkin: #분산 추적의 시각화를 위한 zipkin 설정
+    tracing:
+      endpoint: http://localhost:9411/api/v2/spans
+  tracing:
+    sampling:
+      probability: 1.0
