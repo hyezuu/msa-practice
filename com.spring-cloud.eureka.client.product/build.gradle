@@ -28,17 +28,17 @@ ext {
 }
 
 dependencies {
-	//trace
-	implementation 'org.springframework.boot:spring-boot-starter-actuator'
-	implementation 'io.micrometer:micrometer-tracing-bridge-brave'
-	implementation 'io.github.openfeign:feign-micrometer'
-	implementation 'io.zipkin.reporter2:zipkin-reporter-brave'
+//	//trace
+//	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+//	implementation 'io.micrometer:micrometer-tracing-bridge-brave'
+//	implementation 'io.github.openfeign:feign-micrometer'
+//	implementation 'io.zipkin.reporter2:zipkin-reporter-brave'
 
 	//spring boot actuator
-	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+//	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 
 	//Config Client
-	implementation 'org.springframework.cloud:spring-cloud-starter-config'
+//	implementation 'org.springframework.cloud:spring-cloud-starter-config'
 
 	//resilience4j
 	implementation 'io.github.resilience4j:resilience4j-spring-boot3:2.2.0'
